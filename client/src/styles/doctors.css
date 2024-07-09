@@ -1,0 +1,92 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set base font size and family */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Global container styles */
+.container1 {
+  display: flex;
+  max-width: 100vw; /* Maintain the full width of the viewport */
+  flex-direction: column;
+  padding: 0 20px;
+  overflow-y: auto;
+  overflow-x: hidden; /* Hide horizontal overflow */
+  height: 100vh; /* Set height to full viewport height */
+  box-sizing: border-box; /* Include padding in the height calculation */
+}
+
+
+
+/* Page heading styles */
+.page-heading {
+  color: #333;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 10vh; /* Adjusted margin-top */
+  margin-bottom: 20px;
+}
+
+/* Doctors card container styles */
+.doctors-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 20px;
+}
+
+
+/* Doctor card styles */
+.doctor-card {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 5px;
+}
+
+
+.doctor-card h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.doctor-card p {
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .doctors-card-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .page-heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .doctors-card-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .page-heading {
+    font-size: 1.2rem;
+  }
+}

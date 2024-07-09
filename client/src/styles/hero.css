@@ -1,0 +1,155 @@
+@import url(app.css);
+
+.hero {
+  display: flex;
+  height: 90vh;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  align-self: center;
+}
+
+.hero-img {
+  flex: 1;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+.about {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+/* app.css */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y:auto; /* Hide horizontal scrollbar */
+}
+
+.container1 {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr); /* Two rows layout */
+  gap: 3vh;
+  max-height: 80%;
+  padding: 6vw;
+  overflow-x: hidden;
+  overflow-y:auto; /* Hide horizontal scrollbar */
+}
+
+.container1 img {
+  height: 70%;
+  width: 100%;
+  object-fit:cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navcard {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1vh;
+  padding: 1vw;
+  overflow-x: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.navcard:nth-of-type(1) {
+  background-color: #f1c40f; /* Card 1 color */
+}
+
+.navcard:nth-of-type(2) {
+  background-color: #3498db; /* Card 2 color */
+}
+
+.navcard:nth-of-type(3) {
+  background-color: #2ecc71; /* Card 3 color */
+}
+.navcard:nth-of-type(4) {
+  background-color: #e74c3c; /* Card 4 color */
+}
+.navcard:nth-of-type(5) {
+  background-color: #9b59b6; /* Card 5 color */
+}
+.navcard:nth-of-type(6) {
+  background-color: #57c1ac; /* Card 6 color */
+}
+.navcard:nth-of-type(7) {
+  background-color: #f39c12; /* Card 7 color */
+}
+.navcard:nth-of-type(8) {
+  background-color: #5e7892; /* Card 8 color */
+}
+
+
+.navcard img {
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.navcard-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 6vh;
+  align-items: center;
+  padding: 1vw;
+}
+
+.navcard-content h3 {
+  font-size: 1.4rem;
+  color: black;
+}
+
+.navcard-content p {
+  font-size: 1rem;
+  color:white;
+  text-align: left;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 770px) {
+  .hero {
+    height: auto;
+  }
+  .hero,
+  .about {
+    flex-direction: column;
+  }
+  .hero-content {
+    margin-top: 2rem;
+    align-items: center;
+  }
+  .hero-content h1 {
+    text-align: center;
+  }
+  .about-heading {
+    margin-top: 4rem;
+  }
+}

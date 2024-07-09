@@ -1,0 +1,88 @@
+.register-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+
+.form-heading {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.form-input1 {
+  width: 30vw;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background-color: #0056b3;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .register-container {
+    padding: 10px;
+  }
+  .form-input1 {
+    width: 50vw;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 496px) {
+  .register-container {
+    padding: 10px;
+  }
+  .form-input1 {
+    width: 70vw;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+  .form-input1 {
+    width: 32vw;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+}
